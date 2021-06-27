@@ -1,6 +1,7 @@
 import math
 from textwrap import dedent
-from peewee import JSONField, IntegerField, ForeignKeyField
+from peewee import IntegerField, ForeignKeyField
+from playhouse.sqlite_ext import JSONField
 from .basemodel import BaseModel
 from .dataset import Dataset
 from .utility import listify

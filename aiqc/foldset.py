@@ -1,6 +1,7 @@
 import random
 from textwrap import dedent
-from peewee import ForeignKeyField, IntegerField, JSONField
+from peewee import ForeignKeyField, IntegerField
+from playhouse.sqlite_ext import JSONField
 from .basemodel import BaseModel
 from .splitset import Splitset
 import numpy as np

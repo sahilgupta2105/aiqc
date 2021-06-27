@@ -1,6 +1,8 @@
 import requests, io, os, fsspec
 from textwrap import dedent
-from peewee import ForeignKeyField, IntegerField, JSONField, CharField, BooleanField, PickleField, BlobField
+from peewee import ForeignKeyField, IntegerField, CharField, BooleanField, BlobField
+from playhouse.fields import PickleField
+from playhouse.sqlite_ext import JSONField
 from .basemodel import BaseModel
 from .dataset import Dataset
 from .utility import listify, colIndices_from_colNames

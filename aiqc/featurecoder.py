@@ -1,6 +1,8 @@
 import pprint
 from textwrap import dedent
-from peewee import CharField, IntegerField, BooleanField, ForeignKeyField, JSONField, PickleField
+from peewee import CharField, IntegerField, BooleanField, ForeignKeyField
+from playhouse.sqlite_ext import JSONField
+from playhouse.fields import PickleField
 from .basemodel import BaseModel
 from .encoderset import Encoderset
 from .utility import listify

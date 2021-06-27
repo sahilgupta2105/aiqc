@@ -7,7 +7,6 @@ from natsort import natsorted #file sorting.
 import appdirs #os-agonistic folder.
 # ORM.
 from peewee import CharField, IntegerField, BlobField, BooleanField, DateTimeField, ForeignKeyField
-from playhouse.sqlite_ext import JSONField
 from playhouse.fields import PickleField
 # ETL.
 import pandas as pd
@@ -36,6 +35,7 @@ from .foldset import Foldset, Fold
 from .encoderset import Encoderset
 from .labelcoder import Label, Labelcoder
 from .featurecoder import Featurecoder
+from playhouse.sqlite_ext import JSONField
 
 name = "aiqc"
 """

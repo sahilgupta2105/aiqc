@@ -1,8 +1,9 @@
 import inspect, warnings
 from textwrap import dedent
-from peewee import CharField, BooleanField, ForeignKeyField, JSONField, PickleField
+from peewee import CharField, BooleanField, ForeignKeyField
+from playhouse.fields import PickleField
+from playhouse.sqlite_ext import JSONField
 from .basemodel import BaseModel
-from .encoderset import Encoderset
 from .label import Label
 from .labelcoder import Labelcoder
 import constants

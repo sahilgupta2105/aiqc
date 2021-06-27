@@ -1,5 +1,6 @@
 from textwrap import dedent
-from peewee import JSONField, IntegerField, ForeignKeyField
+from peewee import IntegerField, ForeignKeyField
+from playhouse.sqlite_ext import JSONField
 import numpy as np
 from .basemodel import BaseModel
 from .dataset import Dataset

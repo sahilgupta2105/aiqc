@@ -1,13 +1,6 @@
 from textwrap import dedent
-from peewee import ForeignKeyField, IntegerField, JSONField, CharField, BooleanField
-from .basemodel import BaseModel
-from .splitset import Splitset
-from .label import Label
-from .feature import Feature
-from .dataset import Dataset
-from .utility import listify, colIndices_from_colNames
-from .foldset import Foldset
-from .feature import Featureset
+from peewee import ForeignKeyField, IntegerField, CharField, BooleanField
+from playhouse.sqlite_ext import JSONField
 from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
